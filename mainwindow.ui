@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/images/Resources/icon.png</normaloff>:/images/Resources/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>70</y>
+      <width>521</width>
+      <height>271</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_new_file"/>
+    <addaction name="action_open_file"/>
+    <addaction name="separator"/>
+    <addaction name="action_save_file"/>
+    <addaction name="action_save_to"/>
+    <addaction name="separator"/>
+    <addaction name="action_quit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_copy"/>
+    <addaction name="action_cut"/>
+    <addaction name="action_paste"/>
+    <addaction name="separator"/>
+    <addaction name="action_bold"/>
+    <addaction name="action_italic"/>
+    <addaction name="action_underline"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="action_about"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_new_file"/>
+   <addaction name="action_open_file"/>
+   <addaction name="action_save_file"/>
+   <addaction name="action_save_to"/>
+   <addaction name="separator"/>
+   <addaction name="action_copy"/>
+   <addaction name="action_cut"/>
+   <addaction name="action_paste"/>
+   <addaction name="separator"/>
+   <addaction name="action_font"/>
+   <addaction name="action_bold"/>
+   <addaction name="action_italic"/>
+   <addaction name="action_underline"/>
+   <addaction name="separator"/>
+   <addaction name="action_redo"/>
+   <addaction name="action_undo"/>
+   <addaction name="separator"/>
+   <addaction name="action_print"/>
+  </widget>
+  <action name="action_new_file">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/new_file.png</normaloff>:/images/Resources/new_file.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_open_file">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/open_file.png</normaloff>:/images/Resources/open_file.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_save_file">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/save.png</normaloff>:/images/Resources/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_save_to">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/save_to.png</normaloff>:/images/Resources/save_to.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="action_paste">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/paste.png</normaloff>:/images/Resources/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_cut">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/cut.png</normaloff>:/images/Resources/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>剪切</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="action_copy">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/copy.png</normaloff>:/images/Resources/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_bold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/bold.png</normaloff>:/images/Resources/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>加粗</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="action_italic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/italic.png</normaloff>:/images/Resources/italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>斜体</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="action_print">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/Print.png</normaloff>:/images/Resources/Print.png</iconset>
+   </property>
+   <property name="text">
+    <string>打印</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_redo">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/redo.png</normaloff>:/images/Resources/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>redo</string>
+   </property>
+  </action>
+  <action name="action_undo">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/undo.png</normaloff>:/images/Resources/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>undo</string>
+   </property>
+  </action>
+  <action name="action_quit">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/quit.png</normaloff>:/images/Resources/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/info.png</normaloff>:/images/Resources/info.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action_underline">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/underline.png</normaloff>:/images/Resources/underline.png</iconset>
+   </property>
+   <property name="text">
+    <string>下划线</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="action_font">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/Resources/font.png</normaloff>:/images/Resources/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>字体</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
